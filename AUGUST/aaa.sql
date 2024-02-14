@@ -1,0 +1,7 @@
+CREATE FUNCTION RepeatString(n INT, s VARCHAR(255))
+RETURNS VARCHAR(255)
+BEGIN
+    DECLARE result VARCHAR(255);
+    SET result = REPEAT(s, n);
+    RETURN result;
+END;
